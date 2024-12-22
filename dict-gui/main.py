@@ -5,7 +5,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Database setup
-e = create_engine('mysql+pymysql://root:Password123+@localhost:3306/dict')
+e = create_engine('mysql+pymysql://root:password@localhost:3306/dict')
 Base = declarative_base()
 Session = sessionmaker(bind=e)
 s = Session()
